@@ -17,71 +17,94 @@
             <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
             <span class="fs-4">Weather Mountan</span>
           </a>
-    
-          <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-          </ul>
+  
         </header>
-      </div>    
-      <div class="row mb-3 text-center">
-        <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-              <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-              <span class="fs-4">Sidebar</span>
-            </a>
-            <hr>
-            <ul class="nav nav-pills flex-column mb-auto">
-              <li class="nav-item">
-                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                    <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
-                </form>
-              </li>
-              <li>
-                <a href="#" class="nav-link text-white">
-                  <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-                  Dashboard
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link text-white">
-                  <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
-                  Orders
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link text-white">
-                  <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
-                  Products
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link text-white">
-                  <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-                  Customers
-                </a>
-              </li>
-            </ul>
-            <hr>
-            <div class="dropdown">
-              <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                <strong>mdo</strong>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                <li><a class="dropdown-item" href="#">New project...</a></li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Sign out</a></li>
-              </ul>
+      
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <ul class="list-group">
+                <li>      
+                  <form class="d-flex" role="search" id="search-city">
+                    <input class="form-control me-2" id="city-input" type="search" placeholder="Search a City" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                  <br>
+                  <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary" type="button" id="1"><span id="most-recent"></span>Most Recent City</button>
+                    <button class="btn btn-primary" type="button">Button</button>
+                  </div>
+            </div>
+
+            <div class="col-8">
+              <h2>Showing weather for:<span id="weather-search-term"></span></span></h2>
+              <div id="weather-container">
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title" id="title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary" id="date">Card subtitle</h6>
+                  <p class="card-text" id="temperature"></p>
+                  <img class="card-text" id="icon"></img>
+                  <p class="card-text" id="humidity"></p>
+                  <p class="card-text" id="wind-speed"></p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title" id="title2">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary" id="date2">Card subtitle</h6>
+                  <p class="card-text" id="temperature2"></p>
+                  <img class="card-text" id="icon2"></img>
+                  <p class="card-text" id="humidity2"></p>
+                  <p class="card-text" id="wind-speed2"></p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title" id="title3">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary" id="date3">Card subtitle</h6>
+                  <p class="card-text" id="temperature3"></p>
+                  <img class="card-text" id="icon3"></img>
+                  <p class="card-text" id="humidity3"></p>
+                  <p class="card-text" id="wind-speed3"></p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title" id="title4">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary" id="date4">Card subtitle</h6>
+                  <p class="card-text" id="temperature4"></p>
+                  <img class="card-text" id="icon4"></img>
+                  <p class="card-text" id="humidity4"></p>
+                  <p class="card-text" id="wind-speed4"></p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title" id="title5">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary" id="date5">Card subtitle</h6>
+                  <p class="card-text" id="temperature5"></p>
+                  <img class="card-text" id="icon5"></img>
+                  <p class="card-text" id="humidity5"></p>
+                  <p class="card-text" id="wind-speed5"></p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title" id="title6">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary" id="date6">Card subtitle</h6>
+                  <p class="card-text" id="temperature6"></p>
+                  <img class="card-text" id="icon6"></img>
+                  <p class="card-text" id="humidity6"></p>
+                  <p class="card-text" id="wind-speed6"></p>
+                </div>
+              </div>
+              <!-- <div id="weather-container" class="list-group"></div> -->
             </div>
           </div>
-        <div class="col-md-8 themed-grid-col">.col-md-8</div>
-      </div>
+          </div>
+        </div>
+
 
 
     <script src="./assets/script.js"></script>
