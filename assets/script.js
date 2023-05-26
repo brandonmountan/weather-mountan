@@ -10,7 +10,7 @@
         var cityInput = document.getElementById("city-input");
         // First using name of city input api docs
         var cityUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${cityInput.value}&limit=5&appid=6ac40e04657514fb1da3311ff15ccebb`; 
-
+        // Having trouble with getting the local storage to function. ran out of time ...
             var cityInputVal = cityInput.value
 
             localStorage.setItem("cityInput", cityInputVal)

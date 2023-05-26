@@ -6,5 +6,8 @@ The motivation for this project was to accomplish the difficult task of starting
 
 ## Screenshot
 
+![screenshot page 1](/assets/img/project6img1.PNG);
 
 ## Link
+
+https://brandonmountan.github.io/weather-mountan/
